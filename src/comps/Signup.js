@@ -2,19 +2,20 @@ import React,{Component} from 'react';
 import fire from '../firebase/config.js';
 import { useState } from 'react';
 
-const Login=()=>{
+const Signout= () => {
     const[email,setEmail]=useState(null);
     const[password,setPassword]=useState(null);
 
-    const login=(e)=>{
+    const signup=(e)=>{
         e.preventDefault();
-        fire.auth().signInWithEmailAndPassword(email,password).then((u)=>{
+        fire.auth().createUserWithEmailAndPassword(email,password).then((u)=>{
             console.log(u)
         }).catch((err)=>{
             console.log(err);
         })
     }
-    return(
+
+    return (  
         <div>
             <form>
                 <input
@@ -33,11 +34,11 @@ const Login=()=>{
                 value={password}
                 onChange={(e)=>setPassword(e.target.value)}
                 />
-                <button onClick={login}>Login</button>
+                <button onClick={signup}>Signup</button>
             </form>
 
         </div>
-    )
+    );
 }
-
-export default Login;
+ 
+export default Signout;

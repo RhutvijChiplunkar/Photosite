@@ -1,0 +1,23 @@
+
+.title h1{
+  color:#ff4d00;
+  font-size: 1.8rem;
+  letter-spacing: 1.6px;
+  font-weight: bold;
+  text-decoration: underline bisque 3.5px;
+  margin-left: 10px;
+  margin-top:-5px;
+}
+
+.title h2, .title p{
+  text-align: center;
+  color: beige;
+}
+.title h2{
+  margin-top: -15px;
+  font-size: 2rem;
+}
+.title p{
+  margin-top: -15px;
+  font-size: 1.1rem;
+}

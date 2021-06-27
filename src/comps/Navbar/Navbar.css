@@ -1,0 +1,41 @@
+/* navbar */
+
+.nav-bar{
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  left: 0px;
+  top: 0px;
+  width:100%;
+  box-sizing: border-box;
+  align-items: center;
+  border-radius: 0px 0px 10px 10px;
+}
+.nav-bar .main{
+  color:#ff4d00;
+  font-size: 1.8rem;
+  letter-spacing: 1.6px;
+  font-weight: bold;
+  text-decoration: underline bisque 3.5px;
+  margin-left: 10px;
+  margin-top:0px;
+}
+.nav-bar button{
+  color:white;
+  top: 0px;
+  float: right;
+  margin-left:10px;
+  margin-right:10px;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  outline: none;
+  background-color: black;
+  border-color: white;
+  border-radius: 10px;
+  width: 80px;
+  height: 40px;
+}
+.nav-bar button:hover{
+  background-color: white;;
+  color:black;
+}

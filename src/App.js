@@ -7,6 +7,7 @@ import TotalPosts from './comps/TotalPosts/TotalPosts';
 import fire from './firebase/config';
 import Logout from './comps/Logout';
 import Login from './comps/Login';
+import Signup from './comps/Signup';
 import Navbar from './comps/Navbar/Navbar';
 import Home from './comps/Home';
 import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
@@ -34,10 +35,14 @@ import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
   return (
     <Router>
       <Navbar/>
+
       <div className="App">
         <Switch>
           <Route exact path="/Login"> 
             <Login/>
+          </Route>
+          <Route exact path="/Signup"> 
+            <Signup/>
           </Route>
           <Route exact path="/main"> 
             <Title/>

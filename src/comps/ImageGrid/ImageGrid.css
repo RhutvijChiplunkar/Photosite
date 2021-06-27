@@ -1,0 +1,29 @@
+
+/* image grid styles */
+.img-grid{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px;
+  }
+  .img-wrap{
+    overflow: hidden;
+    height: 0;
+    padding: 50% 0;
+    /* padding controls height, will always be perfectly square regardless of width */
+    position: relative;
+    /* opacity: 0.8; */
+    /* border:  3px solid whitesmoke; */
+  }
+  .img-wrap img{
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  

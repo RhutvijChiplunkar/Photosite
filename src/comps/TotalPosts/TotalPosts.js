@@ -1,5 +1,6 @@
 import React from 'react';
-import useFirestore from '../hooks/useFirestore';
+import useFirestore from '../../hooks/useFirestore';
+import './TotalPosts.css';
 
 const TotalPosts = () => {
     const {docs}=useFirestore('images');

@@ -1,0 +1,7 @@
+/* progress bar styles */
+.progress-bar {
+    height: 15px;
+    background:rgba(31, 230, 40, 0.8);
+    margin-top: 15px;
+  }
+  

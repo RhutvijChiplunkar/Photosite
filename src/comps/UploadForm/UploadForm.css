@@ -1,0 +1,41 @@
+/* upload form styles */
+form{
+  margin: 30px auto 10px;
+  text-align: center;
+}
+label input{
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+label{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 10px auto;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+label:hover{
+  background: white;
+  color: black;
+}
+.abc{
+  font-size: 1.35rem;
+  margin-top: -10px;
+  margin-bottom: -5px;
+  color: #84c9fb;
+}
+
+.output{
+  height: 60px;
+  font-size: 1rem;
+}
+.error{
+  color: var(--error);
+  font-weight: bolder;
+}
