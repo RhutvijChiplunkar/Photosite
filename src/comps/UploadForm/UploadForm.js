@@ -28,7 +28,7 @@ const UploadForm = () => {
     return ( 
         <form>
             <h4 className="abc">Add an image</h4>
-            <label>
+            <label className="label-upload">
             <input type="file" onChange={changeHandler}/>
             <span className="myDIV">+</span>
             </label>
