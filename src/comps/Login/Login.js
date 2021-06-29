@@ -1,51 +1,37 @@
-import React,{Component} from 'react';
+import React,{useState,useContext} from 'react';
 import fire from '../../firebase/config.js';
-import { useState } from 'react';
-import './Login.css';
-import Logout from '../Logout.js';
-import { Link, Redirect } from 'react-router-dom';
+/* import './Login.css'; */
+import {Redirect } from 'react-router-dom';
+import {AuthContext} from '../Auth/Auth';
 
 const Login=()=>{
-    const[email,setEmail]=useState(null);
-    const[password,setPassword]=useState(null);
 
-    const login=(e)=>{
+    const handleSubmit=(e)=>{
         e.preventDefault();
-        fire.auth().signInWithEmailAndPassword(email,password).then((u)=>{
-            console.log(u);
-        }).catch((err)=>{
-            console.log(err);
-        }) 
+        const{email,password}=e.target.elements;
+        try{
+            fire.auth().signInWithEmailAndPassword(email,password)
+        }
+        catch(error){
+            alert(error);
+        }
     }
 
+    const{currentUser}=useContext(AuthContext);
+    if(currentUser){
+        return <Redirect to="/dashboard" />
+    }
     return(
-        <div className="login-container">
-            <h1>Login Form</h1>
-            <form className="login-form">
-                <label className="login">
-                <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="enter email address"
-                value={email}
-                onChange={(e)=>setEmail(e.target.value)}
-                />
-                </label>
-                <label className="login">
-                <input
-                name="password"
-                type= "password"
-                id="password"
-                placeholder="enter password"
-                value={password}
-                onChange={(e)=>setPassword(e.target.value)}
-                />
-                </label>
-                <button className="btn" onClick={login}>Login</button>
-            </form>
-
-        </div>
+        <div>
+        <h1>Log In</h1>
+        <form onSubmit={handleSubmit}>
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Email" />
+          <label for="password">Password</label>
+          <input type="password" name="password" placeholder="Password" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     )
 }
 
