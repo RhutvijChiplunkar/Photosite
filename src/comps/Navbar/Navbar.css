@@ -9,6 +9,7 @@
   box-sizing: border-box;
   align-items: center;
   border-radius: 0px 0px 10px 10px;
+  position: fixed;
 }
 .nav-bar .main{
   color:#ff4d00;
