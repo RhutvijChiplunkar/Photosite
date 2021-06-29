@@ -1,50 +1,42 @@
-import React,{Component} from 'react';
+import React,{useState} from 'react';
 import fire from '../../firebase/config.js';
-import { useState } from 'react';
+import { Redirect } from 'react-router-dom';
 
 
-const Signout= () => {
-    const[email,setEmail]=useState(null);
-    const[password,setPassword]=useState(null);
+const Signup= () => {
+    /* const[email,setEmail]=useState(null);
+    const[password,setPassword]=useState(null); */
 
-    const signup=(e)=>{
+    const[currentUser,setCurrentUser]=useState(null);
+    const handleSubmit=(e)=>{
         e.preventDefault();
-        fire.auth().createUserWithEmailAndPassword(email,password).then((u)=>{
-            console.log(u)
-        }).catch((err)=>{
-            console.log(err);
-        })
+        const{email,password}=e.target.elements; 
+
+        try{
+            fire.auth().createUserWithEmailAndPassword(email.value,password.value);
+            setCurrentUser(true);
+        }
+        catch(error){
+            alert(error);
+        }
+    }
+
+    if(currentUser){
+        return <Redirect to="/dashboard" />;
     }
 
     return (  
-        <div className="login-container">
-            <h1>Signup Form</h1>
-            <form className="login-form">
-                <label className="login">
-                <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="enter email address"
-                value={email}
-                onChange={(e)=>setEmail(e.target.value)}
-                />
-                </label>
-                <label className="login">
-                <input
-                name="password"
-                type= "password"
-                id="password"
-                placeholder="enter password"
-                value={password}
-                onChange={(e)=>setPassword(e.target.value)}
-                />
-                </label>
-                <button className="btn" onClick={signup}>Signup</button>
-            </form>
-
-        </div>
+        <div>
+        <h1>Sign Up</h1>
+        <form onSubmit={handleSubmit}>
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Email" />
+          <label for="password">Password</label>
+          <input type="password" name="password" placeholder="Password" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     );
 }
  
-export default Signout;
+export default Signup;
