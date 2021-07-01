@@ -23,13 +23,13 @@ const Login=()=>{
     }
     return(
         <div>
-        <h1>Log In</h1>
         <form onSubmit={handleSubmit}>
-          <label for="email">Email</label>
-          <input type="email" name="email" placeholder="Email" />
-          <label for="password">Password</label>
-          <input type="password" name="password" placeholder="Password" />
-          <button type="submit">Submit</button>
+            <h1>Log In</h1>
+            <label for="email">Email</label><br></br>
+            <input type="email" name="email" placeholder="Email" /><br></br>
+            <label for="password">Password</label><br></br>
+            <input type="password" name="password" placeholder="Password" /><br></br>
+            <button type="submit">Login</button>
         </form>
       </div>
     )
