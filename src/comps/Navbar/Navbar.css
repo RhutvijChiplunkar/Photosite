@@ -2,15 +2,14 @@
 
 .nav-bar{
   position: absolute;
-  background-color: rgba(0,0,0,0.5);
   left: 0px;
   top: 0px;
   width:100%;
   box-sizing: border-box;
   align-items: center;
   border-radius: 0px 0px 10px 10px;
-  position: fixed;
 }
+
 .nav-bar .main{
   color:#ff4d00;
   font-size: 1.8rem;
@@ -20,6 +19,7 @@
   margin-left: 10px;
   margin-top:0px;
 }
+
 .nav-bar button{
   color:white;
   top: 0px;
