@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import fire from '../../firebase/config.js';
 import { Redirect } from 'react-router-dom';
+import '../Login/Login.css'
 
 
 const Signup= () => {
@@ -27,7 +28,7 @@ const Signup= () => {
 
     return (  
         <div>
-        <form onSubmit={handleSubmit}>
+        <form className="login-form" onSubmit={handleSubmit}>
             <h1>Sign Up</h1>
             <label for="email">Email</label><br></br>
             <input type="email" name="email" placeholder="Email" /><br></br>
