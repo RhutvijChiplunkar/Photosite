@@ -1,6 +1,6 @@
 import React,{useState,useContext} from 'react';
 import fire from '../../firebase/config.js';
-/* import './Login.css'; */
+import './Login.css';
 import {Redirect } from 'react-router-dom';
 import {AuthContext} from '../Auth/Auth';
 
@@ -23,7 +23,7 @@ const Login=()=>{
     }
     return(
         <div>
-        <form onSubmit={handleSubmit}>
+        <form className="login-form" onSubmit={handleSubmit}>
             <h1>Log In</h1>
             <label for="email">Email</label><br></br>
             <input type="email" name="email" placeholder="Email" /><br></br>
