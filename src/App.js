@@ -26,6 +26,11 @@ const App=()=> {
 
             <Route exact path="/">
               <Home/>
+              <Title/>
+              <UploadForm/>
+              <TotalPosts/>
+              <ImageGrid setSelectedImage={setSelectedImage}/>
+              {selectedImage && <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage}/>}
             </Route>
 
             <Route exact path="/login"> 
