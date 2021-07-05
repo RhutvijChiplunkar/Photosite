@@ -1,0 +1,9 @@
+.dash{
+    align-items: center;
+    text-align: center;
+}
+
+.dash h1,p{
+    padding-top: 20px;
+    color: burlywood;
+}
