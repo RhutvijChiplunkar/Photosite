@@ -11,7 +11,12 @@ const Home = () => {
             <h2>This is site where you can upload your collection of photos and view them in a grid-like structure</h2>
             {currentUser?
                 (<p>You are logged in-<Link to="/dashboard">View Your Dashboard</Link></p>):
-                (<p>You can Login or Signup</p>)
+                (
+                <div>
+                    <p>You can Login or Signup from our navbar</p>
+                    <h4>Take a look at the grid :)</h4>
+                </div>
+                )
             }                
         </div>
      );
