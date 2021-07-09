@@ -1,33 +1,35 @@
 import React,{useState} from 'react';
 import fire from '../../firebase/config.js';
 import { Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../Login/Login.css'
 
 
 const Signup= () => {
 
     const[currentUser,setCurrentUser]=useState(null);
+    const[userId,setUserId]=useState(null);
+
     const handleSubmit=(e)=>{
         e.preventDefault();
         const{email,password}=e.target.elements; 
 
-/*         try{
-            fire.auth().createUserWithEmailAndPassword(email.value,password.value);
-            setCurrentUser(true);
-        }
-        catch(error){
-            alert(error);
-        } */
         fire.auth().createUserWithEmailAndPassword(email.value,password.value).then((u)=>{
             setCurrentUser(true);
-            console.log(u);
+            setUserId(u.user.uid);
+            console.log(u.user.uid);
         }).catch((err)=>{
             alert(err);
         })
     }
 
     if(currentUser){
-        return <Redirect to="/dashboard" />;
+        return (
+            <div className="signup-conf">
+            <h1>User successfully created</h1>
+            <h1><Link  to={`/dashboard/${userId}`}>My dashboard</Link></h1>
+            </div>
+        ); 
     }
 
     return (  
