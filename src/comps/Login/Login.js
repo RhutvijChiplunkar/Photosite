@@ -5,27 +5,27 @@ import {Redirect } from 'react-router-dom';
 import {AuthContext} from '../Auth/Auth';
 
 const Login=()=>{
+    const[userId,setUserId]=useState(null);
 
     const handleSubmit=(e)=>{
         e.preventDefault();
          const{email,password}=e.target.elements;
-/*        try{
-            fire.auth().signInWithEmailAndPassword(email.value,password.value)
-        }
-        catch(error){
-            alert(error);
-        } */
+
         fire.auth().signInWithEmailAndPassword(email.value,password.value).then((u)=>{
-            console.log(u)
+            console.log(u.user.uid);
+            setUserId(u.user.uid);
         }).catch((err)=>{
             alert(err);
         })
     }
 
     const{currentUser}=useContext(AuthContext);
+   
+
     if(currentUser){
-        return <Redirect to={"/dashboard" }/>
+        return <Redirect to={`/dashboard/${userId}` }/>
     }
+
     return(
         <div>
         <form className="login-form" onSubmit={handleSubmit}>
