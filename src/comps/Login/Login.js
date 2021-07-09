@@ -8,18 +8,23 @@ const Login=()=>{
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-        const{email,password}=e.target.elements;
-        try{
+         const{email,password}=e.target.elements;
+/*        try{
             fire.auth().signInWithEmailAndPassword(email.value,password.value)
         }
         catch(error){
             alert(error);
-        }
+        } */
+        fire.auth().signInWithEmailAndPassword(email.value,password.value).then((u)=>{
+            console.log(u)
+        }).catch((err)=>{
+            alert(err);
+        })
     }
 
     const{currentUser}=useContext(AuthContext);
     if(currentUser){
-        return <Redirect to="/dashboard" />
+        return <Redirect to={"/dashboard" }/>
     }
     return(
         <div>
