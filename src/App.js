@@ -41,7 +41,7 @@ const App=()=> {
               <Signup/>
             </Route>
 
-            <Route exact path="/dashboard"> 
+            <Route path="/dashboard/:id"> 
               <Dashboard/>
             </Route>
 
