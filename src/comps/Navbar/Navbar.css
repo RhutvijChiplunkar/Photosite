@@ -8,6 +8,8 @@
   box-sizing: border-box;
   align-items: center;
   border-radius: 0px 0px 10px 10px;
+  position: relative;
+  /* background-color: aquamarine; */
 }
 
 .nav-bar .main{
