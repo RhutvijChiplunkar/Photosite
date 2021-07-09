@@ -45,14 +45,6 @@ const App=()=> {
               <Dashboard/>
             </Route>
 
-            <Route exact path="/sample"> 
-              <Title/>
-              <UploadForm/>
-              <TotalPosts/>
-              <ImageGrid setSelectedImage={setSelectedImage}/>
-              {selectedImage && <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage}/>}
-            </Route>
-
           </Switch>
 
         </div>
