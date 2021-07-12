@@ -1,9 +1,19 @@
-import React from 'react';
+import { AuthContext } from '../Auth/Auth';
+import React, {useContext,useEffect } from 'react';
 import useFirestore from '../../hooks/useFirestore';
 import './TotalPosts.css';
 
 const TotalPosts = () => {
-    const {docs}=useFirestore('images');
+    const{currentUser}=useContext(AuthContext)
+ 
+    var userId;
+    if(currentUser){
+        userId=currentUser.uid
+    }
+    else{
+        userId='images';
+    }
+    const {docs}=useFirestore(`${userId}`);
     var x=docs.length;
     return (  
         <div className="total-posts">
