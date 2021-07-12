@@ -1,11 +1,21 @@
-import React, { useEffect } from 'react';
+import React, {useContext,useEffect } from 'react';
 import useFirestore from '../../hooks/useFirestore';
 import {motion} from 'framer-motion';
+import { AuthContext } from '../Auth/Auth';
 import './ImageGrid.css'
 
 const ImageGrid= ({setSelectedImage}) => {
-    /* const id=us */
-    const {docs}=useFirestore('images');
+    const{currentUser}=useContext(AuthContext)
+ 
+    var userId;
+    if(currentUser){
+        userId=currentUser.uid;
+    }
+    else{
+        userId='images';
+    }
+    //const {docs}=useFirestore('images');
+    const {docs}=useFirestore(`${userId}`);
 
     return (
 
