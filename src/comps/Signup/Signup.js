@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
 import fire from '../../firebase/config.js';
-import { Redirect } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import '../Login/Login.css'
 
