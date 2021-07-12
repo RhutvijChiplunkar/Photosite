@@ -1,0 +1,6 @@
+.not-found{
+    align-items: center;
+}
+.not-found h1,p,a{
+    text-align:center;
+}
