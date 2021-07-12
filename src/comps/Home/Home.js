@@ -5,8 +5,7 @@ import './Home.css';
 
 const Home = () => {
     const{currentUser}=useContext(AuthContext)
-    /* const[userId,setUserId]=useState(null); */
-
+ 
     var usr;
     if(currentUser){
         var usr=currentUser.uid
