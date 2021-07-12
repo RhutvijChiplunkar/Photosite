@@ -9,6 +9,7 @@ import Signup from './comps/Signup/Signup';
 import Navbar from './comps/Navbar/Navbar';
 import Home from './comps/Home/Home';
 import Dashboard from './comps/Dashboard/Dashboard';
+import NotFound from './comps/NotFound/NotFound';
 import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
 import AuthProvider from './comps/Auth/Auth';
 
@@ -27,7 +28,6 @@ const App=()=> {
             <Route exact path="/">
               <Home/>
               <Title/>
-              <UploadForm/>
               <TotalPosts/>
               <ImageGrid setSelectedImage={setSelectedImage}/>
               {selectedImage && <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage}/>}
@@ -45,6 +45,9 @@ const App=()=> {
               <Dashboard/>
             </Route>
 
+            <Route path="*">
+              <NotFound/>
+            </Route>
           </Switch>
 
         </div>
