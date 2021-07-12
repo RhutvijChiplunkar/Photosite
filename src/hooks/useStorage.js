@@ -1,7 +1,15 @@
-import { useState,useEffect} from 'react';
+import React,{useContext,useState,useEffect} from 'react';
 import {projectStorage,projectFirestore,timestamp} from '../firebase/config';
+import { AuthContext } from '../comps/Auth/Auth';
 
 const useStorage = (file) => {
+    
+    const{currentUser}=useContext(AuthContext);
+    var usr;
+    if(currentUser){
+        var usr=currentUser.uid;
+    }
+
     const[progress,setProgress]=useState(0);
     const[error,setError]=useState(null);
     const[url,setUrl]=useState(null);
@@ -10,7 +18,7 @@ const useStorage = (file) => {
         //references
         const storageRef=projectStorage.ref(file.name);
         //store refernece url of the image
-        const collectionRef=projectFirestore.collection('images')
+        const collectionRef=projectFirestore.collection(`${usr}`)
 
         /* uploading the file to the reference */
         storageRef.put(file).on('state_changed',(snap)=>{
