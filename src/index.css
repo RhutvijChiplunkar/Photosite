@@ -11,10 +11,13 @@ body{
   font-family: "Noto Serif";
   background-color: #000;
   color: beige;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 0%;
 }
-.App{
+/* .App{
   margin: 0 auto;
-}
+} */
 
 /* below are the styles for scroll bar*/
 ::-webkit-scrollbar {
