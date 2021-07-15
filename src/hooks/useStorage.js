@@ -1,4 +1,4 @@
-import React,{useContext,useState,useEffect} from 'react';
+import {useContext,useState,useEffect} from 'react';
 import {projectStorage,projectFirestore,timestamp} from '../firebase/config';
 import { AuthContext } from '../comps/Auth/Auth';
 
@@ -7,7 +7,7 @@ const useStorage = (file) => {
     const{currentUser}=useContext(AuthContext);
     var usr;
     if(currentUser){
-        var usr=currentUser.uid;
+        usr=currentUser.uid;
     }
 
     const[progress,setProgress]=useState(0);
