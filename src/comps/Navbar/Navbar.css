@@ -7,9 +7,7 @@
   width:100%;
   box-sizing: border-box;
   align-items: center;
-  border-radius: 0px 0px 10px 10px;
-  position: relative;
-  /* background-color: aquamarine; */
+  position: absolute;
 }
 
 .nav-bar .main{
@@ -24,10 +22,9 @@
 
 .nav-bar button{
   color:white;
-  top: 0px;
   float: right;
-  margin-left:10px;
-  margin-right:10px;
+  margin-left:10px !important;
+  margin-right:10px !important;
   margin-top: 10px;
   font-size: 1rem;
   font-weight: bold;
