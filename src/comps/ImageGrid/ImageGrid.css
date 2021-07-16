@@ -1,9 +1,9 @@
 
 /* image grid styles */
 .img-grid{
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
+    margin-left: 40px !important;
+    margin-right: 40px !important;
+    margin-top: 40px !important;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 60px;
@@ -14,8 +14,6 @@
     padding: 50% 0;
     /* padding controls height, will always be perfectly square regardless of width */
     position: relative;
-    /* opacity: 0.8; */
-    /* border:  3px solid whitesmoke; */
   }
   .img-wrap img{
     min-width: 100%;

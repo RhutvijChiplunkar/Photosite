@@ -7,7 +7,6 @@ import UploadForm from '../UploadForm/UploadForm';
 import TotalPosts from '../TotalPosts/TotalPosts.js';
 import ImageGrid from '../ImageGrid/ImageGrid.js';
 import Modal from '../Modal/Modal.js';
-import NotFound from '../NotFound/NotFound.js';
 
 const Dashboard = () => {
     //this is used to enlarge an image when clicked
