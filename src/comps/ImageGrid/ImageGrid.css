@@ -1,27 +1,43 @@
 
 /* image grid styles */
 .img-grid{
-    margin-left: 40px !important;
-    margin-right: 40px !important;
-    margin-top: 40px !important;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 60px;
+  margin-left: 40px !important;
+  margin-right: 40px !important;
+  margin-top: 50px !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 60px;
+}
+.img-wrap{
+  overflow: hidden;
+  height: 0;
+  padding: 50% 0;
+  /* padding controls height, will always be perfectly square regardless of width */
+  position: relative;
+}
+.img-wrap img{
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media(max-width:1080px){
+  .img-grid{
+  grid-gap: 40px;
   }
-  .img-wrap{
-    overflow: hidden;
-    height: 0;
-    padding: 50% 0;
-    /* padding controls height, will always be perfectly square regardless of width */
-    position: relative;
+}
+
+@media(max-width:720px){
+  .img-grid{
+  grid-gap: 35px;
   }
-  .img-wrap img{
-    min-width: 100%;
-    min-height: 100%;
-    max-width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+}
+
+@media(max-width:480px){
+  .img-grid{
+  grid-gap: 20px;
   }
-  
-  
+}
