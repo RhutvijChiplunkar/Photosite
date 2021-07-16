@@ -1,5 +1,5 @@
 import { AuthContext } from '../Auth/Auth';
-import React, {useContext,useEffect } from 'react';
+import React, {useContext} from 'react';
 import useFirestore from '../../hooks/useFirestore';
 import './TotalPosts.css';
 
