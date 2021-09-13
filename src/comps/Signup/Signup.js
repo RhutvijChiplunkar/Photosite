@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import fire from '../../firebase/config.js';
 import { Link } from 'react-router-dom';
+import { Form, Button } from "react-bootstrap";
 import '../Login/Login.css'
 
 
@@ -32,16 +33,31 @@ const Signup= () => {
     }
 
     return (  
-        <div>
-        <form className="login-form" onSubmit={handleSubmit}>
-            <h1>Sign Up</h1>
-            <label for="email">Email</label><br></br>
-            <input type="email" name="email" placeholder="Email" /><br></br>
-            <label for="password">Password</label><br></br>
-            <input type="password" name="password" placeholder="Password" /><br></br>
-            <button type="submit">Sign Up</button>
-        </form>
-      </div>
+        <div className="signup-forms">
+        <Form onSubmit={handleSubmit}>
+            <h2>Signup</h2>
+            <hr/>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Text className="text-muted">
+                    We'll never share your email with anyone else.
+                </Form.Text>
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Label>Password</Form.Label>
+                <Form.Control type="password" placeholder="Password" />
+            </Form.Group>
+
+            <a href='/login'>Already have an account? Login</a><br/><br/>
+
+            <Button id="x2" variant="primary" type="submit">
+                Signup
+            </Button>
+
+        </Form>
+    </div>
     );
 }
  
