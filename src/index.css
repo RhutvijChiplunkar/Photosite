@@ -19,7 +19,8 @@ body{
 
 /* below are the styles for scroll bar*/
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
+  height: 8px;
 }
 
 /* Track */
