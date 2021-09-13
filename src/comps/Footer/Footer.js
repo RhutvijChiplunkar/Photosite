@@ -1,9 +1,10 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Footer.css';
 const Footer = () => {
     return ( 
       <div class="footer">
-        <h3>&copy; Rhutvij Chiplunkar</h3>      
+        <h6>&copy; Rhutvij Chiplunkar</h6>      
       </div>
      );
 }

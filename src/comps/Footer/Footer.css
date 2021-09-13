@@ -1,8 +1,11 @@
-.footer h3{
+.footer h6{
   margin-top: 5%;
   text-align: center;
-  color: purple;
+  color: black;
+  background-color: gray;
   font-weight: bold;
   padding: 10px 0px 5px;
-  bottom: 0%;
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
 }
