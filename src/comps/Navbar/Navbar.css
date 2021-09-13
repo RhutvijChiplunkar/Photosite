@@ -1,4 +1,14 @@
 /* navbar */
+.title{
+  color: #ff4d00;
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.title:hover{
+  color: #ff4d00;
+}
 
 .nav-bar{
   position: absolute;
@@ -10,7 +20,25 @@
   position: absolute;
   height: 6%;
 }
-ul{
+.navbar-all .btn{
+  background-color: transparent;
+  color: whitesmoke;
+  border-color: white;
+  width: auto;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 80px;
+}
+.navbar-all .btn:hover{
+  background-color: whitesmoke;
+  color: black;
+  border: whitesmoke;
+  width: auto;
+  font-weight: bolder;
+  border-radius: 15px;
+  width: 80px;
+}
+/* ul{
   float: right;
 }
 .nav-bar .main{
@@ -45,7 +73,7 @@ ul{
 .nav-bar button:active{
   background-color: white;;
   color:black;
-}
+} */
 
 #a{
   color: black;
