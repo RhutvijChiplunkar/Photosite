@@ -1,21 +1,44 @@
-Form{
-    border: crimson 2px solid;
-    font-weight: bold;
+.signup-forms{
     align-items: center;
-    margin: auto;
-    margin-top: 20%;
-    padding: 3%;
+    margin-top: 10%;
+}
+h2{
+    color: chocolate;
+}
+.signup-forms hr{
+    height: 5px;
+    background-color: whitesmoke;
+    border: none;
+    align-items: center;
+}
+.signup-forms Form{
+    border: crimson 2px solid;
+    align-items: center;
+    padding: 2%;
     width: 40%;
 }
 
-#x2:hover{
+.signup-forms #x2:hover{
     background-color: green;
     font-weight: bold;
+}
+.signup-forms Label{
+    color: blanchedalmond;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.signup-forms a{
+    color: turquoise;
+    text-decoration: underline none;
+}
+.signup-forms a:hover{
+    color: red;
+    text-decoration: underline none;
 }
 
 @media only screen and (max-width:768px){
     Form{
-        margin-top: 20%;
         padding: 6%;
         width: 70%; 
     }
@@ -24,7 +47,6 @@ Form{
 
 @media only screen and (max-width:360px){
     Form{
-        margin-top: 30%;
         padding: 6%;
         width: 80%; 
     }

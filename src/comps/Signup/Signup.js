@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import fire from '../../firebase/config.js';
 import { Link } from 'react-router-dom';
 import { Form, Button } from "react-bootstrap";
-import '../Login/Login.css'
+import '../Signup/Signup.css'
 
 
 const Signup= () => {
