@@ -4,7 +4,7 @@ import ImageGrid from './comps/ImageGrid/ImageGrid';
 import Modal from './comps/Modal/Modal';
 import Login from './comps/Login/Login';
 import Signup from './comps/Signup/Signup';
-import Navbar from './comps/Navbar/Navbar';
+import Navb from './comps/Navbar/Navbar';
 import Home from './comps/Home/Home';
 import Dashboard from './comps/Dashboard/Dashboard';
 import NotFound from './comps/NotFound/NotFound';
@@ -20,7 +20,7 @@ const App=()=> {
   return (
     <AuthProvider>
       <Router>
-        <Navbar/>
+        <Navb/>
         <div className="App">
           <Switch>
 
