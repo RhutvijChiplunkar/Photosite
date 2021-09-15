@@ -14,13 +14,21 @@ h2{
 .signup-forms Form{
     border: crimson 2px solid;
     align-items: center;
-    padding: 2%;
+    padding: 3%;
     width: 40%;
 }
-
-.signup-forms #x2:hover{
-    background-color: green;
+.signup-forms button{
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid white;
     font-weight: bold;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.signup-forms button:hover{
+    background-color: #5cb85c;
+    color: black;
+    border: 2px solid black;
 }
 .signup-forms Label{
     color: blanchedalmond;
@@ -37,18 +45,19 @@ h2{
     text-decoration: underline none;
 }
 
-@media only screen and (max-width:768px){
-    Form{
+@media screen and (max-width:360px){
+    .signup-forms Form{
+        padding: 6%;
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .signup-forms Form{
         padding: 6%;
         width: 70%; 
     }
 
 }
 
-@media only screen and (max-width:360px){
-    Form{
-        padding: 6%;
-        width: 80%; 
-    }
-
-}
