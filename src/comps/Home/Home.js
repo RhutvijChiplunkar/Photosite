@@ -23,7 +23,7 @@ const Home = () => {
                 ):
                 (
                 <div>
-                    <p>You can Login or Signup from our navbar</p>
+                   {/*  <p>You can Login or Signup from our navbar</p> */}
                 </div>
                 )
             }
