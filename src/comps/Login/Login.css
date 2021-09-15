@@ -2,8 +2,11 @@
     align-items: center;
     margin-top: 10%;
 }
-h2{
-    color: chocolate;
+.login-forms hr{
+    height: 5px;
+    background-color: whitesmoke;
+    border: none;
+    align-items: center;
 }
 .login-forms Form{
     border: crimson 2px solid;
@@ -11,12 +14,7 @@ h2{
     padding: 3%;
     width: 40%;
 }
-.login-forms hr{
-    height: 5px;
-    background-color: whitesmoke;
-    border: none;
-    align-items: center;
-}
+
 .login-forms button{
     background-color: black;
     border-radius: 10px;
@@ -43,3 +41,19 @@ h2{
     color: red;
     text-decoration: underline none;
 }
+@media screen and (max-width:360px){
+    .login-forms Form{
+        padding: 6%;
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .login-forms Form{
+        padding: 6%;
+        width: 70%; 
+    }
+
+}
+
