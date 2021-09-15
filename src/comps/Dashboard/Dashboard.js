@@ -7,6 +7,7 @@ import UploadForm from '../UploadForm/UploadForm';
 import TotalPosts from '../TotalPosts/TotalPosts.js';
 import ImageGrid from '../ImageGrid/ImageGrid.js';
 import Modal from '../Modal/Modal.js';
+import { Button } from 'react-bootstrap';
 
 const Dashboard = () => {
     //this is used to enlarge an image when clicked
@@ -24,7 +25,8 @@ const Dashboard = () => {
             <TotalPosts/>
             <ImageGrid setSelectedImage={setSelectedImage}/>
             {selectedImage && <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage}/>}
-            <button onClick={()=>fire.auth().signOut()}>Sign Out</button>
+            {/* <button onClick={()=>fire.auth().signOut()}>Sign Out</button> */}
+            <Button onClick={()=>fire.auth().signOut()} >Sign Out</Button>
         </div>
     );
 }

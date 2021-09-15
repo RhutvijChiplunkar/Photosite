@@ -7,3 +7,19 @@
     padding-top: 20px;
     color: burlywood;
 }
+
+.dash button{
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border:2px solid red;
+    border-radius: 10px;
+}
+
+.dash button:hover{
+    background-color: red;
+    outline: none;
+    color: white;
+    border-color: white;
+}
