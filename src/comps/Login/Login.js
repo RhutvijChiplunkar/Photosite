@@ -48,7 +48,7 @@ const Login=()=>{
 
             <a href='/signup'>New here? Register</a><br/><br/>
 
-            <Button id="x" variant="primary" type="submit">
+            <Button variant="primary" type="submit">
                 Login
             </Button>
 
