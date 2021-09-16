@@ -12,7 +12,7 @@
     border: crimson 2px solid;
     align-items: center;
     padding: 3%;
-    width: 40%;
+    width: 45%;
 }
 
 .login-forms button{
@@ -41,19 +41,43 @@
     color: red;
     text-decoration: underline none;
 }
-@media screen and (max-width:360px){
-    .login-forms Form{
-        padding: 6%;
-        width: 80%;
-    }
 
+/*media queries*/
+@media screen and (max-width:1200px){
+    .login-forms Form{
+        margin-top: 12%;
+        width: 50% ; 
+    }
+}
+
+
+@media screen and (max-width:1024px){
+    .login-forms Form{
+        margin-top: 14%;
+        width: 60% ; 
+    }
 }
 
 @media screen and (max-width:768px){
     .login-forms Form{
-        padding: 6%;
-        width: 70%; 
+        margin-top: 18%;
+        width: 80% ;
     }
 
 }
 
+@media screen and (max-width:480px){
+    .login-forms Form{
+        margin-top: 24%;
+        width: 85%;
+    }
+
+}
+
+@media screen and (max-width:320px){
+    .login-forms Form{
+        margin-top: 30%;
+        width: 90% ;
+    }
+
+}
