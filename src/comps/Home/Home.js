@@ -27,7 +27,7 @@ const Home = () => {
                 </div>
                 )
             }
-            <h4>Take a look at the grid :)</h4>                
+            <h4>Take a look at the grid below :)</h4>                
         </div>
      );
 }
