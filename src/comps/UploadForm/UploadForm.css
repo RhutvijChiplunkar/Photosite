@@ -1,14 +1,21 @@
 /* upload form styles */
-form{
+.upload-form h4{
+  font-size: 1.35rem;
+  margin-top: -10px;
+  margin-bottom: -5px;
+  color: #84c9fb;
+}
+
+.upload-form form{
   margin: 30px auto 10px;
   text-align: center;
 }
-.label-upload input {
+.upload-form input {
   height: 0;
   width: 0;
   opacity: 0;
 }
-.label-upload{
+.upload-form label span{
   display: block;
   width: 30px;
   height: 30px;
@@ -20,20 +27,15 @@ form{
   font-weight: bold;
   font-size: 30px;
 }
-.label-upload:hover{
+.upload-form label span:hover{
   background: white;
   color: black;
 }
-.abc{
-  font-size: 1.35rem;
-  margin-top: -10px;
-  margin-bottom: -5px;
-  color: #84c9fb;
-}
 
-.output{
+.upload-form .output{
   height: 60px;
   font-size: 1rem;
+
 }
 .error{
   color: var(--error);
