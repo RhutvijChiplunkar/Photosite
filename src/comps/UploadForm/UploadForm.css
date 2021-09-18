@@ -3,34 +3,33 @@ form{
   margin: 30px auto 10px;
   text-align: center;
 }
-.label-upload input {
+.upload-form label input {
   height: 0;
   width: 0;
   opacity: 0;
 }
-.label-upload{
+.upload-form label{
   display: block;
-  width: 30px;
-  height: 30px;
-  border: 1px solid white;
+  width: 40px;
+  height: 40px;
+  border: 3px solid white;
   border-radius: 50%;
-  margin: 10px auto;
-  line-height: 30px;
+  margin: 2% auto;
+  line-height: 25px;
   color: white;
   font-weight: bold;
   font-size: 30px;
 }
-.label-upload:hover{
+.upload-form label:hover{
   background: white;
   color: black;
 }
-.abc{
+.upload-form h4{
   font-size: 1.35rem;
   margin-top: -10px;
-  margin-bottom: -5px;
   color: #84c9fb;
 }
-
+/*For output and errors*/
 .output{
   height: 60px;
   font-size: 1rem;
