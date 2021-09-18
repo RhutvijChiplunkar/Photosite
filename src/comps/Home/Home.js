@@ -13,7 +13,7 @@ const Home = () => {
 
    
     return ( 
-        <div>
+        <div className="home">
             <h1>Hola Users!</h1>
             <h2>This is site where you can upload your collection of photos and view them in a grid-like structure</h2>
             {currentUser?
@@ -23,11 +23,9 @@ const Home = () => {
                 ):
                 (
                 <div>
-                   {/*  <p>You can Login or Signup from our navbar</p> */}
                 </div>
                 )
-            }
-            <h4>Take a look at the grid below :)</h4>                
+            }            
         </div>
      );
 }
