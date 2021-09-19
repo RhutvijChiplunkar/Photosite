@@ -7,7 +7,9 @@
 .progress-bar-width{
   max-width: 60%;
 }
-
+.display-percent{
+  color: azure;
+}
 @media screen and (max-width:768px){
   .progress-bar-width{
     max-width: 70%;

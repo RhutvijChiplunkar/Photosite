@@ -19,7 +19,7 @@ const ProgressBar = ({file,setFile}) => {
                 initial={{width:0}}  
                 animate={{width:progress+'%'}}
                 ></motion.div>
-            <h3>{progress.toFixed(2)}%</h3>
+            <h3 className="display-percent">{progress.toFixed(2)}%</h3>
             </Container>
         </div>    
      );
