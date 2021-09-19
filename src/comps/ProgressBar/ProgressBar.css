@@ -1,7 +1,21 @@
 /* progress bar styles */
 .progress-bar {
-    height: 15px;
-    background:rgba(31, 230, 40, 0.8);
-    margin-top: 15px;
-  }
-  
+  height: 15px;
+  background:rgba(31, 230, 40, 0.8);
+  margin-top: 15px;
+}
+.progress-bar-width{
+  max-width: 60%;
+}
+
+@media screen and (max-width:768px){
+  .progress-bar-width{
+    max-width: 70%;
+  } 
+}
+
+@media screen and (max-width:360px){
+  .progress-bar-width{
+    max-width: 80%;
+  } 
+}
