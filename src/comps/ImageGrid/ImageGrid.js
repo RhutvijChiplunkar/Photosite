@@ -24,7 +24,6 @@ const ImageGrid= ({setSelectedImage}) => {
             //motion.div when we want to use motion in div
             <motion.div className="img-wrap" key={doc.id}
             layout
-            /* whileHover={{ opacity:1}} */
             whileHover={{scale:1.15}}
             //click event added in div tag
                 onClick={()=>setSelectedImage(doc.url)}> 
