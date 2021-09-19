@@ -1,18 +1,17 @@
 /* modal styles */
 .backdrop{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.5);
-  }
-  .backdrop img{
-    display: block;
-    max-width: 60% !important;
-    max-height: 80% !important;
-    margin: 60px auto !important;
-    box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
-    border: 3px solid black;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+.backdrop img{
+  display: block;
+  max-width: 60% !important;
+  max-height: 80% !important;
+  margin: 60px auto !important;
+  box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
+  border: 3px solid black;
+}
