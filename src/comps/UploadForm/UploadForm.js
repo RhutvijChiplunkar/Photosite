@@ -37,7 +37,7 @@ const UploadForm = () => {
                     {/* if error exist in file upload */}
                     {error && <div className="error">{error}</div>}
                     {/* if uploaded correctly */}
-                    {file && <div>{file.name} is uploading right now!!</div>}
+                    {file && <div className="status">{file.name} is uploading right now!!</div>}
 
                     {file && <ProgressBar file={file} setFile={setFile} />}
                 </div>

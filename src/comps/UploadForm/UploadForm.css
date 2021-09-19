@@ -34,7 +34,10 @@ form{
   height: 60px;
   font-size: 1rem;
 }
-.error{
+.output .error{
   color: var(--error);
   font-weight: bolder;
+}
+.output .status{
+  color: whitesmoke;
 }
