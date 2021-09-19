@@ -3,11 +3,15 @@
     text-align: center;
 }
 
-.dash h1,p{
-    padding-top: 20px;
+.dash h1{
+    margin-top: 5%;
     color: burlywood;
+    font-weight: bold;
 }
-
+.dash p{
+    color: burlywood;
+    font-size: 1.5rem;
+}
 .dash button{
     background-color: transparent;
     color: white;
@@ -22,4 +26,45 @@
     outline: none;
     color: white;
     border-color: white;
+}
+
+/*Media queries for margin top of heading*/
+@media screen and (max-width:1100px){
+    .dash h1{
+    margin-top: 6%;
+    }
+}
+@media screen and (max-width:950px){
+    .dash h1{
+    margin-top: 8%;
+    }
+}
+@media screen and (max-width:800px){
+    .dash h1{
+    margin-top: 11%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .dash h1{
+    margin-top: 13%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .dash h1{
+    margin-top: 16%;
+    }
+}
+
+@media screen and (max-width:400px){
+    .dash h1{
+    margin-top: 20%;
+    }
+}
+
+@media screen and (max-width:350px){
+    .dash h1{
+    margin-top: 23%;
+    }
 }
