@@ -13,11 +13,10 @@
     font-size: 1.5rem;
 }
 .dash button{
-    background-color: transparent;
-    color: white;
+    margin-top: 2%;
+    color: black;
     font-weight: bold;
     outline: none;
-    border:2px solid red;
     border-radius: 10px;
 }
 
@@ -25,7 +24,9 @@
     background-color: red;
     outline: none;
     color: white;
-    border-color: white;
+    border-color: black;
+    border-radius: 5px 10px;
+    width: 100px;
 }
 
 /*Media queries for margin top of heading*/
@@ -43,11 +44,17 @@
     .dash h1{
     margin-top: 11%;
     }
+    .dash button{
+        margin-top: 3%;
+    }
 }
 
 @media screen and (max-width:600px){
     .dash h1{
     margin-top: 13%;
+    }
+    .dash button{
+        margin-top: 3.5%;
     }
 }
 
@@ -55,16 +62,25 @@
     .dash h1{
     margin-top: 16%;
     }
+    .dash button{
+        margin-top: 4%;
+    }
 }
 
 @media screen and (max-width:400px){
     .dash h1{
     margin-top: 20%;
     }
+    .dash button{
+        margin-top: 4.5%;
+    }
 }
 
 @media screen and (max-width:350px){
     .dash h1{
     margin-top: 23%;
+    }
+    .dash button{
+        margin-top: 5%;
     }
 }
