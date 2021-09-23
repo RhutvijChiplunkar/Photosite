@@ -1,3 +1,16 @@
+.signup-confirm .container{
+    align-items: center;
+    text-align: center;
+}
+.signup-confirm h1{
+    color: gainsboro;
+    margin-top: 15%;
+}
+.signup-confirm a{
+    font-size: 2rem;
+    color: orange;
+}
+
 .signup-forms{
     align-items: center;
     margin-top: 10%;

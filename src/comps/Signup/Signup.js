@@ -25,10 +25,13 @@ const Signup = () => {
 
     if (currentUser) {
         return (
-            <div className="signup-conf">
-                <h1>User successfully created</h1>
-                <h1><Link to={`/dashboard/${userId}`}>My dashboard</Link></h1>
-            </div>
+             <div className="signup-confirm">
+                 <div className="container">
+                    <h1>Account successfully created</h1>
+                    <h2>!! Welcome !!</h2>
+                    <Link to={`/dashboard/${userId}`} className="my-db">My dashboard</Link>
+                </div>
+            </div> 
         );
     }
 
