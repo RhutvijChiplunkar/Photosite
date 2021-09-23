@@ -17,3 +17,6 @@
     color: red;
     font-size: 1.5rem;
 }
+.not-found a:hover{
+    color: orange;
+}
