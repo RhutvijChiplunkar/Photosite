@@ -12,9 +12,11 @@ const Navb = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-            </Nav>
+            </Nav >
+            <Nav className="text-center">
             <Nav.Link href="/login" ><Button className="btn">Login</Button></Nav.Link>
             <Nav.Link href="/signup" ><Button className="btn">Signup</Button></Nav.Link>
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
