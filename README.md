@@ -2,4 +2,4 @@
 
 ### Home Page 
 
-![](Screenshots/Home_page.png)
+![](Screenshots/Home_page.PNG)
