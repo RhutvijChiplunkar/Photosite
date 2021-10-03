@@ -9,4 +9,15 @@
   width: 100%;
   margin-bottom: 0;
   bottom: 0;
+  font-size: 18px;
+}
+
+.footer a{
+  color: black;
+}
+.footer a:active{
+  color: black;
+}
+.footer a:visited{
+  color: black;
 }
