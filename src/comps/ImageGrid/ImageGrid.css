@@ -25,6 +25,20 @@
   left: 0;
 }
 
+.cross{
+  background-color: black;
+  float: right;
+  color: red;
+  font-weight: bold;
+  width: auto;
+  height: auto;
+}
+
+.cross:hover{
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+}
 /* Media queries */
 @media screen and (max-width:1080px){
   .img-grid{
