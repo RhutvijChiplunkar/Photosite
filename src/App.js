@@ -1,5 +1,4 @@
 import React ,{useState } from 'react';
-import Title from './comps/Title/Title';
 import ImageGrid from './comps/ImageGrid/ImageGrid';
 import Modal from './comps/Modal/Modal';
 import Login from './comps/Login/Login';
@@ -26,7 +25,6 @@ const App=()=> {
 
             <Route exact path="/">
               <Home/>
-              <Title/>
               <ImageGrid setSelectedImage={setSelectedImage}/>
               {selectedImage && <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage}/>}
             </Route>
