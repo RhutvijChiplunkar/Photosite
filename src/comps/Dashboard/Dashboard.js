@@ -25,8 +25,7 @@ const Dashboard = () => {
             <TotalPosts/>
             <ImageGrid setSelectedImage={setSelectedImage}/>
             {selectedImage && <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage}/>}
-            {/* <button onClick={()=>fire.auth().signOut()}>Sign Out</button> */}
-            <Button onClick={()=>fire.auth().signOut()} variant="primary" type="submit">Sign Out</Button>
+            <Button className="so-btn" onClick={()=>fire.auth().signOut()} variant="primary" type="submit">Sign Out</Button>
         </div>
     );
 }

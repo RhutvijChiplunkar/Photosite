@@ -12,7 +12,7 @@
     color: burlywood;
     font-size: 1.5rem;
 }
-.dash button{
+.dash .so-btn{
     margin-top: 2%;
     color: black;
     font-weight: bold;
@@ -20,7 +20,7 @@
     border-radius: 10px;
 }
 
-.dash button:hover{
+.dash .so-btn:hover{
     background-color: red;
     outline: none;
     color: white;
