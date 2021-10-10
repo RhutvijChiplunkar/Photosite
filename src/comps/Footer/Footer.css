@@ -1,23 +1,38 @@
-.footer h6{
-  margin-top: 5%;
-  text-align: center;
-  color: black;
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.footer{
   background-color: gray;
+  text-align: center;
+}
+.footer h4{
+  margin-top: 5%;
+  color: black;
   font-weight: bold;
   padding: 10px 0px 5px;
   position: relative;
   width: 100%;
   margin-bottom: 0;
   bottom: 0;
-  font-size: 18px;
+  font-size: 20px;
 }
+
 
 .footer a{
   color: black;
+  font-size: 2.5rem;
 }
+
 .footer a:active{
   color: black;
 }
+
+.footer a:hover{
+  background-color: lightsteelblue;
+}
 .footer a:visited{
   color: black;
+}
+.social-icon{
+  padding-left: 1.5%;
+  padding-right: 1.5%;
 }
