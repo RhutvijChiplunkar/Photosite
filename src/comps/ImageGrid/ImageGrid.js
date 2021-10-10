@@ -22,10 +22,18 @@ const ImageGrid = ({ setSelectedImage }) => {
         <div className="img-grid">
             {docs && docs.map(doc => (
                 <div>
-                    <div>
-                        <button className="cross" onClick={(e)=>{ projectFirestore.collection(`${userId}`).doc(doc.id).delete();}}>x</button>
-                    </div>
-                    {/* //motion.div when we want to use motion in div */}
+                    {currentUser ?
+                        (
+                            <div>
+                                <button className="cross" onClick={(e) => { projectFirestore.collection(`${userId}`).doc(doc.id).delete(); }}>x</button>
+                            </div>
+                        ) :
+                        (
+                            <div>
+                                <button className="cross" disabled="true">x</button>
+                            </div>
+                        )
+                    }
                     <motion.div className="img-wrap" key={doc.id}
                         layout
                         whileHover={{ scale: 1.15 }}
