@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer = () => {
     return ( 
       <div className="footer">
-        <h6>Developed by <a href="https://github.com/RhutvijChiplunkar"><i className="dev">Rhutvij Chiplunkar</i></a></h6>
+        <h6>Developed by <a href="https://github.com/RhutvijChiplunkar" target="_blank" rel="noopener noreferrer"><i className="dev">Rhutvij Chiplunkar</i></a></h6>
       </div>
      );
 }
