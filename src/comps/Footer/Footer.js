@@ -6,8 +6,8 @@ const Footer = () => {
     <div className="footer">
       <div>
         <h4>Developed by Rhutvij Chiplunkar</h4>
-        <a href="https://linkedin.com/in/rhutvij-chiplunkar" target="_blank" rel="noopener noreferrer" className="social-icon"> <i class="fa fa-linkedin"></i></a>
-        <a href="https://github.com/RhutvijChiplunkar" target="_blank" rel="noopener noreferrer" className="social-icon"> <i class="fa fa-github"></i></a>
+        <a href="https://linkedin.com/in/rhutvij-chiplunkar" target="_blank" rel="noopener noreferrer" className="social-icon"> <i className="fa fa-linkedin"></i></a>
+        <a href="https://github.com/RhutvijChiplunkar" target="_blank" rel="noopener noreferrer" className="social-icon"> <i className="fa fa-github"></i></a>
       </div>
     </div>
   );

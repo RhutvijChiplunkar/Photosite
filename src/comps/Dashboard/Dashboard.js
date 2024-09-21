@@ -1,13 +1,11 @@
-import React,{useState,useContext} from 'react';
-import fire from '../../firebase/config.js';
-import './Dashboard.css';
-import {Redirect } from 'react-router-dom';
-import {AuthContext} from '../Auth/Auth';
-import UploadForm from '../UploadForm/UploadForm';
-import TotalPosts from '../TotalPosts/TotalPosts.js';
+import React, { useContext, useState } from 'react';
+import { Redirect } from 'react-router-dom';
+import { AuthContext } from '../Auth/Auth';
 import ImageGrid from '../ImageGrid/ImageGrid.js';
 import Modal from '../Modal/Modal.js';
-import { Button } from 'react-bootstrap';
+import TotalPosts from '../TotalPosts/TotalPosts.js';
+import UploadForm from '../UploadForm/UploadForm';
+import './Dashboard.css';
 
 const Dashboard = () => {
     //this is used to enlarge an image when clicked
@@ -20,12 +18,11 @@ const Dashboard = () => {
     return (  
         <div className="dash">
             <h1>Welcome to photosite</h1>
-            <p>This is your dashboard. You are logged in successfully</p>
+            <p>This is your dashboard.</p>
             <UploadForm/>
             <TotalPosts/>
             <ImageGrid setSelectedImage={setSelectedImage}/>
             {selectedImage && <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage}/>}
-            <Button className="so-btn" onClick={()=>fire.auth().signOut()} variant="primary" type="submit">Sign Out</Button>
         </div>
     );
 }
